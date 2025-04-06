@@ -37,6 +37,7 @@ public class MineManager {
         int y = block.getY();
         int z = block.getZ();
 
+        if (mine.getPos1() == null || mine.getPos2() == null) return false;
         int minX = Math.min(mine.getPos1().getBlockX(), mine.getPos2().getBlockX());
         int maxX = Math.max(mine.getPos1().getBlockX(), mine.getPos2().getBlockX());
         int minY = Math.min(mine.getPos1().getBlockY(), mine.getPos2().getBlockY());
