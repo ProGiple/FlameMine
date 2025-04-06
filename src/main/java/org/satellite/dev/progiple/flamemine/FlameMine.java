@@ -61,7 +61,7 @@ public final class FlameMine extends LunaPlugin {
         }));
 
         Bukkit.getScheduler().runTaskTimer(INSTANCE, () -> {
-            MineManager.update();
+            MineManager.update(null);
             this.lastTime = System.currentTimeMillis();
         }, 300L, 20L * interval);
     }

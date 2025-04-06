@@ -32,7 +32,8 @@ public class MineCommand implements TabExecutor {
                     }
                     case "setPos1" -> this.setPos(commandSender, 1);
                     case "setPos2" -> this.setPos(commandSender, 2);
-                    case "update" -> MineManager.update();
+                    case "switch" -> MineManager.update(null);
+                    case "update" -> MineManager.update(MineManager.getMine().getLevelId());
                 }
             } else Config.sendMessage(commandSender, "noPermission");
         } else this.openMenu(commandSender);
@@ -61,6 +62,6 @@ public class MineCommand implements TabExecutor {
 
     @Override
     public @Nullable List<String> onTabComplete(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String[] strings) {
-        return strings.length == 1 ? List.of("reload", "setPos1", "setPos2", "update", "menu") : List.of();
+        return strings.length == 1 ? List.of("reload", "setPos1", "setPos2", "update", "switch", "menu") : List.of();
     }
 }

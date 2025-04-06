@@ -1,5 +1,5 @@
 name: FlameMine
-version: '1.0.2'
+version: '1.0.2.2'
 main: org.satellite.dev.progiple.flamemine.FlameMine
 api-version: '1.16'
 authors: [NovaSparkle]

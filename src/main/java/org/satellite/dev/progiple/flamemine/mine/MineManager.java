@@ -18,7 +18,7 @@ public class MineManager {
         mine.setHologram();
     }
 
-    public void update() {
+    public void update(String newLevelId) {
         mine.update(null);
     }
 
