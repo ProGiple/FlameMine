@@ -1,16 +1,17 @@
 messages:
-  noPermission: ""
-  reloaded: ""
-  newPos: ""
-  noConsole: ""
-  blockIsEmpty: ""
-  mineIsLocked: ""
+  noPermission: "&cУ вас нет разрешения!"
+  reloaded: "&aПлагин успешно перезагружен!"
+  newPos: "&aВы успешно установили позицию №{0}!"
+  noConsole: "&cНельзя выполнить эту команду от лица консоли!"
+  blockIsEmpty: "&cПосмотрите на блок для установки!"
+  mineIsLocked: "&cШахта еще закрыта!"
 blocked_level_item:
   material: BARRIER
   displayName: '[display_name]'
   lore:
     - " "
-    - "Вскопано блоков: {M}%flamemine_mines% / %flamemine_need%"
+    - "{S}Статус: &cЗакрыто"
+    - "{S}Вскопано блоков: {M}%flamemine_mines% / [need]"
     - " "
 settings:
   action_in_upgrade_mine: NEXT # или RANDOM
@@ -27,30 +28,59 @@ settings:
       z: 0
       world: world
     lines:
-      - Material.COBBLESTONE
-      - "{M}Шахта"
+      - Material.NETHERITE_PICKAXE
+      - "{M}%flamemine_now_mine%"
       - "{S}До обновления: {M}%flamemine_timer%"
 levels:
   id0:
-    name: "{S} Хуйня шахта"
+    name: "{S}Слабая шахта"
     requirements:
       needMineBlocks: false
       amount: 0
     ores:
-      COBBLESTONE: 70.0
-      IRON_ORE: 15.0
-      GOLD_ORE: 10.0
-      DIAMOND_ORE: 3.0
-      EMERALD_ORE: 2.0
+      COBBLESTONE: 90.0
+      IRON_ORE: 45.0
+      GOLD_ORE: 30.0
   id1:
-    name: "{S} Секс шахта"
+    name: "{S}Неплохая шахта"
     requirements:
       needMineBlocks: true
-      amount: 5000
+      amount: 4000
     ores:
-      COBBLESTONE: 30.0
-      IRON_ORE: 25.0
-      GOLD_ORE: 20.0
-      DIAMOND_ORE: 12.0
-      EMERALD_ORE: 10.0
-      ANCIENT_DEBRIS: 8.0
+      COBBLESTONE: 80.0
+      IRON_ORE: 50.0
+      GOLD_ORE: 35.0
+      DIAMOND_ORE: 15.0
+  id2:
+    name: "{S}Нормальная шахта"
+    requirements:
+      needMineBlocks: true
+      amount: 8000
+    ores:
+      COBBLESTONE: 70.0
+      IRON_ORE: 55.0
+      GOLD_ORE: 38.0
+      DIAMOND_ORE: 20.0
+      EMERALD_ORE: 12.0
+  id3:
+    name: "{S}Сильная шахта"
+    requirements:
+      needMineBlocks: true
+      amount: 15000
+    ores:
+      COBBLESTONE: 60.0
+      IRON_ORE: 50.0
+      GOLD_ORE: 40.0
+      DIAMOND_ORE: 25.0
+      EMERALD_ORE: 15.0
+      ANCIENT_DEBRIS: 9.0
+  id4:
+    name: "{S}Адская шахта"
+    requirements:
+      needMineBlocks: true
+      amount: 25000
+    ores:
+      NETHERRACK: 80.0
+      NETHER_QUARTZ_ORE: 60.0
+      NETHER_GOLD_ORE: 55.0
+      ANCIENT_DEBRIS: 15.0

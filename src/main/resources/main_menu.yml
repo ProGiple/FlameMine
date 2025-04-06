@@ -3,7 +3,7 @@ size: 54
 items:
   decoration:
     1:
-      material: BLACK_STAINED_GLASS_PANE
+      material: ORANGE_STAINED_GLASS_PANE
       displayName: "&7Разделитель"
       lore: [ ]
       amount: 1
@@ -15,8 +15,8 @@ items:
         - "44-53"
   info_item:
     material: PAPER
-    slot: 9
-    displayName: ''
+    slot: 22
+    displayName: '{M}Информация'
     lore:
       - " "
       - "{S} До обновления: {M}%flamemine_timer%"
@@ -26,8 +26,75 @@ items:
       - "{S} Вы вскопали: {M}%flamemine_stats%"
       - " "
   levels:
-    id1:
+    id0:
       material: IRON_ORE
-      displayName: ''
-      slot: 21
-      lore: []
+      displayName: '%flamemine_mine_name_id0%'
+      slot: 29
+      lore:
+        - " "
+        - "{S}Статус: &aОткрыто"
+        - " "
+        - "{S}Доступные блоки:"
+        - "{M} ▪ Булыжник"
+        - "{M} ▪ Железная руда"
+        - "{M} ▪ Золотая руда"
+        - " "
+    id1:
+      material: GOLD_ORE
+      displayName: '%flamemine_mine_name_id1%'
+      slot: 30
+      lore:
+        - " "
+        - "{S}Статус: &aОткрыто"
+        - " "
+        - "{S}Доступные блоки:"
+        - "{M} ▪ Булыжник"
+        - "{M} ▪ Железная руда"
+        - "{M} ▪ Золотая руда"
+        - "{M} ▪ Алмазная руда"
+        - " "
+    id2:
+      material: DIAMOND_ORE
+      displayName: '%flamemine_mine_name_id2%'
+      slot: 31
+      lore:
+        - " "
+        - "{S}Статус: &aОткрыто"
+        - " "
+        - "{S}Доступные блоки:"
+        - "{M} ▪ Булыжник"
+        - "{M} ▪ Железная руда"
+        - "{M} ▪ Золотая руда"
+        - "{M} ▪ Алмазная руда"
+        - "{M} ▪ Изумрудная руда"
+        - " "
+    id3:
+      material: EMERALD_ORE
+      displayName: '%flamemine_mine_name_id3%'
+      slot: 32
+      lore:
+        - " "
+        - "{S}Статус: &aОткрыто"
+        - " "
+        - "{S}Доступные блоки:"
+        - "{M} ▪ Булыжник"
+        - "{M} ▪ Железная руда"
+        - "{M} ▪ Золотая руда"
+        - "{M} ▪ Алмазная руда"
+        - "{M} ▪ Изумрудная руда"
+        - "{M} ▪ Древний обломок"
+        - " "
+    id4:
+      material: ANCIENT_DEBRIS
+      displayName: '%flamemine_mine_name_id4%'
+      slot: 33
+      lore:
+        - " "
+        - "{S}Статус: &aОткрыто"
+        - " "
+        - "{S}Доступные блоки:"
+        - "{M} ▪ Незерак"
+        - "{M} ▪ Кварцевая руда"
+        - "{M} ▪ Золочённая руда"
+        - "{M} ▪ Древний обломок"
+        - " "

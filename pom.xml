@@ -6,7 +6,7 @@
 
   <groupId>org.satellite.dev.progiple</groupId>
   <artifactId>FlameMine</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <packaging>jar</packaging>
 
   <name>FlameMine</name>

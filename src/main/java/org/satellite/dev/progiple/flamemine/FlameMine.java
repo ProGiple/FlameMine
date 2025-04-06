@@ -32,6 +32,10 @@ public final class FlameMine extends LunaPlugin {
             else if (s.equalsIgnoreCase("stats")) {
                 return String.valueOf(MineData.getMineBlocks(offlinePlayer.getName()));
             }
+            else if (s.startsWith("mine_name_")) {
+                String id = s.replace("mine_name_", "");
+                return ColorManager.color(Config.getString(String.format("levels.%s.name", id)));
+            }
             else if (s.equalsIgnoreCase("now_mine")) {
                 String now = Config.getString(String.format("levels.%s.name", MineManager.getMine().getLevelId()));
                 return now == null ? "" : ColorManager.color(now);

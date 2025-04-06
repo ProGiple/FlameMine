@@ -7,6 +7,7 @@ import org.bukkit.configuration.ConfigurationSection;
 import org.novasparkle.lunaspring.API.Configuration.IConfig;
 import org.novasparkle.lunaspring.API.Events.CooldownPrevent;
 import org.novasparkle.lunaspring.API.Util.Service.managers.ColorManager;
+import org.novasparkle.lunaspring.API.Util.utilities.Utils;
 import org.satellite.dev.progiple.flamemine.FlameMine;
 
 @UtilityClass
@@ -55,7 +56,7 @@ public class Config {
                 message = ColorManager.color(message.replace("{" + i + "}", string));
                 i++;
             }
-            sender.sendMessage(message);
+            sender.sendMessage(Utils.color(message));
         }
     }
 }

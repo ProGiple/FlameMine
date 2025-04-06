@@ -54,5 +54,7 @@ public class FMenu extends AMenu {
 
         lore.replaceAll(line -> PlaceholderAPI.setPlaceholders(this.getPlayer(), line));
         item.setLore(lore);
+
+        item.setDisplayName(PlaceholderAPI.setPlaceholders(this.getPlayer(), item.getDisplayName()));
     }
 }

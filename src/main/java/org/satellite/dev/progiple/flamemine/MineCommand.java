@@ -1,5 +1,6 @@
 package org.satellite.dev.progiple.flamemine;
 
+import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -47,7 +48,7 @@ public class MineCommand implements TabExecutor {
     public void setPos(CommandSender sender, int pos) {
         if (sender instanceof Player player) {
             Block block = player.getTargetBlock(8);
-            if (block == null) {
+            if (block == null || block.getType().isAir()) {
                 Config.sendMessage(player, "blockIsEmpty");
                 return;
             }
