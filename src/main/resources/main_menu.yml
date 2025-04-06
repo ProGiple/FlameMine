@@ -1,0 +1,33 @@
+title: "{M}Шахта"
+size: 54
+items:
+  decoration:
+    1:
+      material: BLACK_STAINED_GLASS_PANE
+      displayName: "&7Разделитель"
+      lore: [ ]
+      amount: 1
+      slots:
+        - "0-9"
+        - "17-18"
+        - "26-27"
+        - "35-36"
+        - "44-53"
+  info_item:
+    material: PAPER
+    slot: 9
+    displayName: ''
+    lore:
+      - " "
+      - "{S} До обновления: {M}%flamemine_timer%"
+      - "{S} Текущая шахта: {M}%flamemine_now_mine%"
+      - " "
+      - "{S} Вскопано блоков: {M}%flamemine_mines%"
+      - "{S} Вы вскопали: {M}%flamemine_stats%"
+      - " "
+  levels:
+    id1:
+      material: IRON_ORE
+      displayName: ''
+      slot: 21
+      lore: []

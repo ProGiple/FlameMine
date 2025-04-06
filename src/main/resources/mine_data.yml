@@ -1,0 +1,12 @@
+pos1:
+  x: 0
+  y: -1
+  z: 0
+  world: world
+pos2:
+  x: 10
+  y: -1
+  z: 10
+  world: world
+mines:
+  ProGiple: 0

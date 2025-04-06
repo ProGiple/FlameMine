@@ -1,0 +1,19 @@
+name: FlameMine
+version: '${project.version}'
+main: org.satellite.dev.progiple.flamemine.FlameMine
+api-version: '1.16'
+authors: [NovaSparkle]
+depend:
+  - LunaSpring
+  - DecentHolograms
+  - PlaceholderAPI
+commands:
+  flamemine:
+    aliases:
+      - fm
+      - fmine
+      - mine
+      - flamem
+permissions:
+  flamemine.admin:
+    default: op

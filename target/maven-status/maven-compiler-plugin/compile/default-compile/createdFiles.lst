@@ -1,0 +1,9 @@
+org\satellite\dev\progiple\flamemine\mine\menu\ButtonSetter.class
+org\satellite\dev\progiple\flamemine\mine\Mine.class
+org\satellite\dev\progiple\flamemine\mine\menu\FMenu.class
+org\satellite\dev\progiple\flamemine\mine\menu\ButtonSetter$InfoItem.class
+org\satellite\dev\progiple\flamemine\configs\MainMenuConfig.class
+org\satellite\dev\progiple\flamemine\configs\Config.class
+org\satellite\dev\progiple\flamemine\FlameMine.class
+org\satellite\dev\progiple\flamemine\MineCommand.class
+org\satellite\dev\progiple\flamemine\mine\menu\ButtonSetter$BlockedItem.class

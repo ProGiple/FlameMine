@@ -1,0 +1,56 @@
+messages:
+  noPermission: ""
+  reloaded: ""
+  newPos: ""
+  noConsole: ""
+  blockIsEmpty: ""
+  mineIsLocked: ""
+blocked_level_item:
+  material: BARRIER
+  displayName: '[display_name]'
+  lore:
+    - " "
+    - "Вскопано блоков: {M}%flamemine_mines% / %flamemine_need%"
+    - " "
+settings:
+  action_in_upgrade_mine: NEXT # или RANDOM
+  update_time: 600 # раз в сколько секунд обновлять шахту?
+  respawnLocation:
+    x: 0
+    y: 10
+    z: 0
+    world: world
+  hologram:
+    position:
+      x: 0
+      y: 0
+      z: 0
+      world: world
+    lines:
+      - Material.COBBLESTONE
+      - "{M}Шахта"
+      - "{S}До обновления: {M}%flamemine_timer%"
+levels:
+  id0:
+    name: "{S} Хуйня шахта"
+    requirements:
+      needMineBlocks: false
+      amount: 0
+    ores:
+      COBBLESTONE: 70.0
+      IRON_ORE: 15.0
+      GOLD_ORE: 10.0
+      DIAMOND_ORE: 3.0
+      EMERALD_ORE: 2.0
+  id1:
+    name: "{S} Секс шахта"
+    requirements:
+      needMineBlocks: true
+      amount: 5000
+    ores:
+      COBBLESTONE: 30.0
+      IRON_ORE: 25.0
+      GOLD_ORE: 20.0
+      DIAMOND_ORE: 12.0
+      EMERALD_ORE: 10.0
+      ANCIENT_DEBRIS: 8.0
